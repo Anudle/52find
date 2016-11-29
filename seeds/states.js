@@ -1,0 +1,58 @@
+
+exports.seed = function(knex, Promise) {
+  // Deletes ALL existing entries
+  return knex('states').del()
+    .then(function () {
+      return Promise.all([
+        // Inserts seed entries
+        knex('states').insert({name: 'Alabama', state_tax_deduction: '$10,000'}),
+        knex('states').insert({name: 'Alaska', state_tax_deduction: 'No state tax'}),
+        knex('states').insert({name: 'Arizona', state_tax_deduction: '$4,000'}),
+        knex('states').insert({name: 'Arkansas', state_tax_deduction: '$10,000'}),
+        knex('states').insert({name: 'California', state_tax_deduction: 'No deductions'}),
+        knex('states').insert({name: 'Colorado', state_tax_deduction: 'Full state tax'}),
+        knex('states').insert({name: 'Connecticut', state_tax_deduction: '$10,000'}),
+        knex('states').insert({name: 'Delaware', state_tax_deduction: 'No deductions'}),
+        knex('states').insert({name: 'District of Colombia', state_tax_deduction: '$8,000'}),
+        knex('states').insert({name: 'Florida', state_tax_deduction: 'No state tax'}),
+        knex('states').insert({name: 'Georgia', state_tax_deduction: '$4,000'}),
+        knex('states').insert({name: 'Hawaii', state_tax_deduction: 'No deductions'}),
+        knex('states').insert({name: 'Idaho', state_tax_deduction: '$8,000'}),
+        knex('states').insert({name: 'Illinois', state_tax_deduction: '$20,000'}),
+        knex('states').insert({name: 'Indiana', state_tax_deduction: '$1,000 (tax credit)'}),
+        knex('states').insert({name: 'Iowa', state_tax_deduction: '$6,376'}),
+        knex('states').insert({name: 'Kansas', state_tax_deduction: '$6,000'}),
+        knex('states').insert({name: 'Kentucky', state_tax_deduction: 'No deductions'}),
+        knex('states').insert({name: 'Louisiana', state_tax_deduction: '$4,800'}),
+        knex('states').insert({name: 'Maine', state_tax_deduction: '$250'}),
+        knex('states').insert({name: 'Maryland', state_tax_deduction: '$5,000'}),
+        knex('states').insert({name: 'Massachusetts', state_tax_deduction: '$2,000'}),
+        knex('states').insert({name: 'Michigan', state_tax_deduction: '$10,000'}),
+        knex('states').insert({name: 'Minnesota', state_tax_deduction: 'No deductions'}),
+        knex('states').insert({name: 'Mississippi', state_tax_deduction: '$20,000'}),
+        knex('states').insert({name: 'Missouri', state_tax_deduction: '$16,000'}),
+        knex('states').insert({name: 'Montana', state_tax_deduction: '$6,000'}),
+        knex('states').insert({name: 'Nebraska', state_tax_deduction: '$10,000'}),
+        knex('states').insert({name: 'Nevada', state_tax_deduction: 'No state tax'}),
+        knex('states').insert({name: 'New Hampshire', state_tax_deduction: 'No deductions'}),
+        knex('states').insert({name: 'New Jersey', state_tax_deduction: 'No deductions'}),
+        knex('states').insert({name: 'New Mexico', state_tax_deduction: 'Full state tax'}),
+        knex('states').insert({name: 'New York', state_tax_deduction: '$10,000'}),
+        knex('states').insert({name: 'North Carolina', state_tax_deduction: 'No deductions'}),
+        knex('states').insert({name: 'North Dakota', state_tax_deduction: '$10,000'}),
+        knex('states').insert({name: 'Ohio', state_tax_deduction: '$2,000'}),
+        knex('states').insert({name: 'Oklahoma', state_tax_deduction: '$20,000'}),
+        knex('states').insert({name: 'Oregon', state_tax_deduction: '$4,620'}),
+        knex('states').insert({name: 'Pennsylvania', state_tax_deduction: '$28,000'}),
+        knex('states').insert({name: 'Road Island', state_tax_deduction: '$1,000'}),
+        knex('states').insert({name: 'South Carolina', state_tax_deduction: 'Full state tax'}),
+        knex('states').insert({name: 'South Dakota', state_tax_deduction: 'No state taxes'}),
+        knex('states').insert({name: 'Tennessee', state_tax_deduction: 'No deductions'}),
+        knex('states').insert({name: 'Texas', state_tax_deduction: 'No state taxes'}),
+        knex('states').insert({name: 'Utah', state_tax_deduction: '$95 (tax credit)'}),
+        knex('states').insert({name: 'Vermont', state_tax_deduction: '$5,000'}),
+        knex('states').insert({name: 'Virgina', state_tax_deduction: 'Full state tax'}),
+        knex('states').insert({name: 'Wisconsion', state_tax_deduction: '$3,100'}),
+      ]);
+    });
+};
