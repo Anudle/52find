@@ -1,13 +1,13 @@
 
 exports.up = function(knex, Promise) {
-  return knex.schema.createTable('book', function(table) {
+  return knex.schema.createTable('states', function(table) {
       table.increments().primary();
-      table.string('title');
-      table.string('author');
+      table.string('name');
+      table.string('state_tax_deduction')
     })
 };
 
 
 exports.down = function(knex, Promise) {
-return knex.schema.dropTableIfExists('book');
+return knex.schema.dropTableIfExists('states');
 };
