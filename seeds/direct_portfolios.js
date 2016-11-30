@@ -287,13 +287,11 @@ exports.seed = function(knex, Promise) {
 
         knex('direct_portfolios').insert({stateid: 47, planid: 47, state: 'Virginia', portfolio_name: 'Conservative Income', plan_name: 'Virginia529 inVEST', one_year_return: 7.18, three_year_return:4.86, five_year_return: 5.10}),
 
-
         knex('direct_portfolios').insert({stateid: 49, planid: 49, state: 'West Virginia', portfolio_name: 'SMART529 WV Direct Aggressive Growth Portfolio', plan_name: 'SMART529 WV Direct College Savings Plan', one_year_return: 13.15, three_year_return: 7.27, five_year_return: 13.37}),
 
         knex('direct_portfolios').insert({stateid: 49, planid: 49, state: 'West Virginia', portfolio_name: 'SMART529 WV Direct Balanced Portfolio', plan_name: 'SMART529 WV Direct College Savings Plan', one_year_return: 10.44, three_year_return:5.9, five_year_return: 9.74}),
 
         knex('direct_portfolios').insert({stateid: 49, planid: 49, state: 'West Virginia', portfolio_name: 'SMART529 WV Direct Conservative Bond Portfolio', plan_name: 'SMART529 WV Direct College Savings Plan', one_year_return: 2.80, three_year_return:2.08, five_year_return: 2.27}),
-
 
         knex('direct_portfolios').insert({stateid: 50, planid: 48, state: 'Wisconsion', portfolio_name: 'Active-Based Aggressive Portfolio', plan_name: 'Learning Quest 529 Education Savings Program', one_year_return: 12.07, three_year_return:6.72}),
 
