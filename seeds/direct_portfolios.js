@@ -100,6 +100,102 @@ exports.seed = function(knex, Promise) {
         knex('direct_portfolios').insert({stateid: 16, planid: 16, state: 'Iowa', portfolio_name: 'Moderate Growth Portfolio', plan_name: 'College Savings Iowa', one_year_return: 10.35, three_year_return:6.25, five_year_return: 9.38}),
 
         knex('direct_portfolios').insert({stateid: 16, planid: 16, state: 'Iowa', portfolio_name: 'Income Portfolio', plan_name: 'College Savings Iowa', one_year_return: 7.21, three_year_return:4.91, five_year_return: 5.2}),
+
+        knex('direct_portfolios').insert({stateid: 17, planid: 17, state: 'Kansas', portfolio_name: '100% Equity Portfolio', plan_name: 'Learning Quest 529 Education Savings Program', one_year_return: 12.93, three_year_return:7.53, five_year_return: 13.31}),
+
+        knex('direct_portfolios').insert({stateid: 17, planid: 17, state: 'Kansas', portfolio_name: 'Balanced Index Portfolio', plan_name: 'Learning Quest 529 Education Savings Program', one_year_return: 10.94, three_year_return:7.76, five_year_return: 10.78}),
+
+        knex('direct_portfolios').insert({stateid: 17, planid: 17, state: 'Kansas', portfolio_name: 'Conservative Portfolio', plan_name: 'Learning Quest 529 Education Savings Program', one_year_return: 9.12, three_year_return:5.12, five_year_return: 7.58}),
+
+        knex('direct_portfolios').insert({stateid: 18, planid: 18, state: 'Kentucky', portfolio_name: 'Active Equity', plan_name: 'Kentucky Education Savings Plan Trust', one_year_return: 11.49, three_year_return: 5.84, five_year_return: 13.12}),
+
+        knex('direct_portfolios').insert({stateid: 18, planid: 18, state: 'Kentucky', portfolio_name: 'Balanced', plan_name: 'Kentucky Education Savings Plan Trust', one_year_return: 9.57, three_year_return:5.59, five_year_return: 8.76}),
+
+        knex('direct_portfolios').insert({stateid: 18, planid: 18, state: 'Kentucky', portfolio_name: 'Fixed Income Portfolio', plan_name: 'Kentucky Education Savings Plan Trust', one_year_return: 4.49, three_year_return: 2.93, five_year_return: 2.09}),
+
+        knex('direct_portfolios').insert({stateid: 19, planid: 19, state: 'Louisiana', portfolio_name: 'Moderate: Ages 0 through 5', plan_name: 'START Saving Program', one_year_return: 10.26, three_year_return:6.24, five_year_return: 9.30}),
+
+        knex('direct_portfolios').insert({stateid: 19, planid: 19, state: 'Louisiana', portfolio_name: 'Moderate: Ages 6 through 10', plan_name: 'START Saving Program', one_year_return: 8.84, three_year_return: 5.67, five_year_return: 7.35}),
+
+        knex('direct_portfolios').insert({stateid: 19, planid: 19, state: 'Louisiana', portfolio_name: 'Moderate: Ages 11 through 15', plan_name: 'START Saving Program', one_year_return: 7.33, three_year_return: 5.02, five_year_return: 5.28}),
+
+        knex('direct_portfolios').insert({stateid: 20, planid: 20, state: 'Maine', portfolio_name: 'BlackRock Equity Index Portfolio', plan_name: 'NextGen College Investing Plan', one_year_return: 15.18, three_year_return: 10.94, five_year_return: 16.08}),
+
+        knex('direct_portfolios').insert({stateid: 20, planid: 20, state: 'Maine', portfolio_name: 'BlackRock Balanced Portfolio', plan_name: 'NextGen College Investing Plan', one_year_return: 8.4}),
+
+        knex('direct_portfolios').insert({stateid: 20, planid: 20, state: 'Maine', portfolio_name: 'BlackRock Fixed Income Portfolio', plan_name: 'NextGen College Investing Plan', one_year_return: 4.36}),
+
+        knex('direct_portfolios').insert({stateid: 21, planid: 21, state: 'Maryland', portfolio_name: 'Equity Portfolio', plan_name: 'College Savings Plans of Maryland', one_year_return: 13.21, three_year_return:7.41, five_year_return: 13.73}),
+
+        knex('direct_portfolios').insert({stateid: 21, planid: 21, state: 'Maryland', portfolio_name: 'Balanced Portfolio', plan_name: 'College Savings Plans of Maryland', one_year_return: 11.30, three_year_return:6.22, five_year_return: 10.53}),
+
+        knex('direct_portfolios').insert({stateid: 21, planid: 21, state: 'Maryland', portfolio_name: 'Bond & Income Portfolio', plan_name: 'College Savings Plans of Maryland', one_year_return: 9.86, three_year_return:4.16, five_year_return: 5.49}),
+
+        knex('direct_portfolios').insert({stateid: 22, planid: 22, state: 'Massachusetts', portfolio_name: 'Fidelity Funds: Aggressive Growth', plan_name: 'U.Fund College Investing Plan', one_year_return: 12.20, three_year_return: 7.19, five_year_return: 13.37}),
+
+        knex('direct_portfolios').insert({stateid: 22, planid: 22, state: 'Massachusetts', portfolio_name: 'Fidelity Funds: Moderate Growth', plan_name: 'U.Fund College Investing Plan', one_year_return: 10.76, three_year_return:6.35, five_year_return: 10.78}),
+
+        knex('direct_portfolios').insert({stateid: 22, planid: 22, state: 'Massachusetts', portfolio_name: 'Fidelity Index Fund: Conservative', plan_name: 'U.Fund College Investing Plan', one_year_return: 2.31, three_year_return:1.71, five_year_return: 1.22}),
+
+        knex('direct_portfolios').insert({stateid: 23, planid: 23, state: 'Michigan', portfolio_name: 'Moderate Age-Based: Age Band 0-4', plan_name: 'Michigan Education Savings Program', one_year_return: 11.63, three_year_return:7.09}),
+
+        knex('direct_portfolios').insert({stateid: 23, planid: 23, state: 'Michigan', portfolio_name: 'Moderate Age-Based: Age Band 9-10', plan_name: 'Michigan Education Savings Program', one_year_return: 9.99, three_year_return: 6.15}),
+
+        knex('direct_portfolios').insert({stateid: 23, planid: 23, state: 'Michigan', portfolio_name: 'Moderate Age-Based: Age Band 16', plan_name: 'Michigan Education Savings Program', one_year_return: 5.61, three_year_return:6.59, five_year_return: 4.20}),
+
+        knex('direct_portfolios').insert({stateid: 24, planid: 24, state: 'Minnesota', portfolio_name: 'Aggressive Allocation Option', plan_name: 'Minnesota College Savings Plan', one_year_return: 11.41}),
+
+        knex('direct_portfolios').insert({stateid: 24, planid: 24, state: 'Minnesota', portfolio_name: 'Moderate Allocation Option', plan_name: 'Minnesota College Savings Plan', one_year_return: 9.93, three_year_return: 5.89, five_year_return: 8.94}),
+
+        knex('direct_portfolios').insert({stateid: 24, planid: 24, state: 'Minnesota', portfolio_name: 'Conservative Allocation Option', plan_name: 'Minnesota College Savings Plan', one_year_return: 6.55}),
+
+        knex('direct_portfolios').insert({stateid: 25, planid: 25, state: 'Mississippi', portfolio_name: 'Fidelity Funds: Aggressive Growth Portfolio', plan_name: 'Mississippi Affordable College Savings', one_year_return: 12.16, three_year_return: 7.18, five_year_return: 13.37}),
+
+        knex('direct_portfolios').insert({stateid: 25, planid: 25, state: 'Mississippi', portfolio_name: 'Moderate Allocation Option', plan_name: 'Mississippi Affordable College Savings', one_year_return: 9.64}),
+
+        knex('direct_portfolios').insert({stateid: 25, planid: 25, state: 'Mississippi', portfolio_name: 'Fixed Income', plan_name: 'Mississippi Affordable College Savings', one_year_return: 5.31, three_year_return: 3.1}),
+
+        knex('direct_portfolios').insert({stateid: 26, planid: 26, state: 'Missouri', portfolio_name: 'Moderate Age-Based (0-5)', plan_name: "MOST Missouri's 529 College Savings Plan", one_year_return: 11.52, three_year_return:6.7, five_year_return: 11.19}),
+
+        knex('direct_portfolios').insert({stateid: 26, planid: 26, state: 'Missouri', portfolio_name: 'Moderate Age-Based (6-10)', plan_name: "MOST Missouri's 529 College Savings Plan", one_year_return: 10.26, three_year_return: 6.19, five_year_return: 9.24}),
+
+        knex('direct_portfolios').insert({stateid: 26, planid: 26, state: 'Missouri', portfolio_name: 'Moderate Age-Based (16-18)', plan_name: "MOST Missouri's 529 College Savings Plan", one_year_return: 7.17, three_year_return: 4.83, five_year_return: 5.08}),
+
+        knex('direct_portfolios').insert({stateid: 27, planid: 27, state: 'Montana', portfolio_name: 'Growth Portfolio', plan_name: 'Achieve Montana', one_year_return: 9.57}),
+
+        knex('direct_portfolios').insert({stateid: 27, planid: 27, state: 'Montana', portfolio_name: 'Moderate Portfolio', plan_name: 'Achieve Montana', one_year_return: 7.21}),
+
+        knex('direct_portfolios').insert({stateid: 27, planid: 27, state: 'Montana', portfolio_name: 'Conservative Portfolio', plan_name: 'Achieve Montana', one_year_return: 4.24}),
+
+        knex('direct_portfolios').insert({stateid: 28, planid: 28, state: 'Nebraska', portfolio_name: 'Age-Based Index 0-5', plan_name: "Nebraska Education Savings Trust", one_year_return: 10.74, three_year_return: 6.42, five_year_return: 9.66}),
+
+        knex('direct_portfolios').insert({stateid: 28, planid: 28, state: 'Nebraska', portfolio_name: 'Age-Based Growth 11-14', plan_name: "Nebraska Education Savings Trust", one_year_return: 8.54, three_year_return:4.94, five_year_return: 7.11}),
+
+        knex('direct_portfolios').insert({stateid: 28, planid: 28, state: 'Nebraska', portfolio_name: 'Age-Based Growth 19+', plan_name: "Nebraska Education Savings Trust", one_year_return: 4.75, three_year_return: 2.13, five_year_return: 1.78}),
+
+        knex('direct_portfolios').insert({stateid: 29, planid: 29, state: 'Nevada', portfolio_name: 'Moderate: Vanguard Growth Portfolio', plan_name: 'The Vanguard 529 Savings Plan', one_year_return: 10.97, three_year_return:6.55, five_year_return: 10.73}),
+
+        knex('direct_portfolios').insert({stateid: 29, planid: 29, state: 'Nevada', portfolio_name: 'Moderate: Vanguard Moderate Growth Portfolio', plan_name: 'The Vanguard 529 Savings Plan', one_year_return: 9.11, three_year_return: 5.78,  five_year_return: 8.21}),
+
+        knex('direct_portfolios').insert({stateid: 29, planid: 29, state: 'Nevada', portfolio_name: 'Moderate: Vanguard Income Portfolio', plan_name: 'The Vanguard 529 Savings Plan', one_year_return: 3.41, three_year_return:2.26, five_year_return: 1.74}),
+
+        knex('direct_portfolios').insert({stateid: 30, planid: 30, state: 'New Hampshire', portfolio_name: 'Fidelity Funds: Aggressive Growth', plan_name: 'UNIQUE College Investing Plan', one_year_return: 12.22, three_year_return: 7.17, five_year_return: 13.36}),
+
+        knex('direct_portfolios').insert({stateid: 30, planid: 30, state: 'New Hampshire', portfolio_name: 'Fidelity Funds: Moderate Growth', plan_name: 'UNIQUE College Investing Plan', one_year_return: 10.78, three_year_return: 6.36, five_year_return: 10.78}),
+
+        knex('direct_portfolios').insert({stateid: 30, planid: 30, state: 'New Hampshire', portfolio_name: 'Fidelity Funds: Conservative', plan_name: 'UNIQUE College Investing Plan', one_year_return: 3.14, three_year_return: 1.93, five_year_return: 1.75}),
+
+        knex('direct_portfolios').insert({stateid: 31, planid: 31, state: 'New Jersey', portfolio_name: 'Franklin Moderate Allocation Age Newborn', plan_name: 'NJBEST 529 College Savings Plan', one_year_return: 7.35, three_year_return:4.89, five_year_return: 9.7}),
+
+        knex('direct_portfolios').insert({stateid: 31, planid: 31, state: 'New Jersey', portfolio_name: 'Franklin Moderate Allocation Age 9 - 12', plan_name: 'NJBEST 529 College Savings Plan', one_year_return: 5.66, three_year_return:3.72, five_year_return: 7.01}),
+
+        knex('direct_portfolios').insert({stateid: 31, planid: 31, state: 'New Jersey', portfolio_name: 'Franklin Moderate Allocation Age 13 - 16', plan_name: 'NJBEST 529 College Savings Plan', one_year_return: 3.98, three_year_return:2.38, five_year_return: 4.43}),
+
+        knex('direct_portfolios').insert({stateid: 32, planid: 32, state: 'New Mexico', portfolio_name: 'Age Based Portfolio 100', plan_name: "The Education Plan's College Savings Program", one_year_return: 11.21, three_year_return: 7.22, five_year_return: 13.39}),
+
+        knex('direct_portfolios').insert({stateid: 32, planid: 32, state: 'New Mexico', portfolio_name: 'Age Based Portfolio 60', plan_name: "The Education Plan's College Savings Program", one_year_return: 8.72, three_year_return:5.68, five_year_return: 9.16}),
+
+        knex('direct_portfolios').insert({stateid: 32, planid: 32, state: 'New Mexico', portfolio_name: 'Age Based Portfolio 20', plan_name: "The Education Plan's College Savings Program", one_year_return: 4.71, three_year_return:3.19, five_year_return: 4.02}),
       ]);
     });
 };
