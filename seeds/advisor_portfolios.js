@@ -79,7 +79,7 @@ exports.seed = function(knex, Promise) {
 
         knex('advisor_portfolios').insert({stateid: 23, planid: 13, state: 'Michigan', portfolio_name: 'Age-Based 0-8', plan_name: 'MI 529 Advisor Plan', one_year_return: 1.96, three_year_return:1.02, five_year_return: 6.58}),
 
-        knex('advisor_portfolios').insert({stateid: 23, planid: 13, state: 'Michigan', portfolio_name: 'Age-Based 12-14', plan_name: 'MI 529 Advisor Plan', one_year_return: .56, three_year_return: .91, , five_year_return: 4}),
+        knex('advisor_portfolios').insert({stateid: 23, planid: 13, state: 'Michigan', portfolio_name: 'Age-Based 12-14', plan_name: 'MI 529 Advisor Plan', one_year_return: .56, three_year_return: .91, five_year_return: 4}),
 
         knex('advisor_portfolios').insert({stateid: 23, planid: 13, state: 'Michigan', portfolio_name: 'Age-Based 15-16', plan_name: 'MI 529 Advisor Plan', one_year_return: .07, three_year_return:.62, five_year_return: 2.68}),
 
@@ -135,7 +135,7 @@ exports.seed = function(knex, Promise) {
 
         knex('advisor_portfolios').insert({stateid: 38, planid: 22, state: 'Oregon', portfolio_name: 'MFS Growth Allocation Fund', plan_name: 'MFS 529 Savings Plan', one_year_return: 5.19, three_year_return:3.55, five_year_return: 9.29}),
 
-        knex('advisor_portfolios').insert({stateid: 38, planid: 22, state: 'Oregon', portfolio_name: 'MFS Lifetime Income Fund', plan_name: 'MFS 529 Savings Plan', one_year_return: .85, three_year_return:1.69 five_year_return: 4.07}),
+        knex('advisor_portfolios').insert({stateid: 38, planid: 22, state: 'Oregon', portfolio_name: 'MFS Lifetime Income Fund', plan_name: 'MFS 529 Savings Plan', one_year_return: .85, three_year_return:1.69, five_year_return: 4.07}),
 
         knex('advisor_portfolios').insert({stateid: 40, planid: 23, state: 'Road Island', portfolio_name: 'Invesco Growth College Portfolio', plan_name: 'CollegeBound 529 (Advisor-sold)', one_year_return: -2.3}),
 
@@ -160,8 +160,6 @@ exports.seed = function(knex, Promise) {
         knex('advisor_portfolios').insert({stateid: 44, planid: 26, state: 'Texas', portfolio_name: 'Balanced Portfolio', plan_name: "Lonestar 529 Plan", one_year_return: 2.42, three_year_return:1.56, five_year_return: 5.70}),
 
         knex('advisor_portfolios').insert({stateid: 44, planid: 26, state: 'Texas', portfolio_name: 'Fixed Income Portfolio', plan_name: "Lonestar 529 Plan", one_year_return: -1.87, three_year_return: .96, five_year_return: .77}),
-
-
 
         knex('advisor_portfolios').insert({stateid: 47, planid: 27, state: 'Virginia', portfolio_name: 'American Funds College 2033 Fund', plan_name: 'CollegeAmerica', one_year_return: 6.71}),
 
