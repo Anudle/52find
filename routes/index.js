@@ -17,4 +17,9 @@ router.get('/state/:id', function(req, res, next) {
     });
 });
 
+
+// Map page
+router.get('/map', function(req, res, next) {
+  res.render('map', { title: 'Express' });
+});
 module.exports = router;
