@@ -6,3 +6,23 @@ body {
 a {
   color: #00B7FF;
 }
+
+/*Homepage*/
+.homepage-pic{
+display: block;
+margin-left: auto;
+margin-right: auto;
+height: 459px;
+width: 688px;
+}
+
+.start{
+display: block;
+margin: auto;
+margin-top: 10vh;
+width: 25%;
+}
+
+.startp{
+  margin-top: 5vh;
+}
