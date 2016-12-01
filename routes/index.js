@@ -8,10 +8,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: '52Finds' });
 });
 
-router.get('/map', function(req, res, next) {
-  res.render('map', { title: 'F2Finds' });
-});
-
 
 
 router.get('/state/:id', function(req, res, next) {
@@ -27,7 +23,7 @@ router.get('/state/:id', function(req, res, next) {
 });
 
 
-<<<<<<< HEAD
+
 router.get('/directs/:id', function(req, res, next) {
   knex.from('states').innerJoin('directs', 'states.id', 'directs.stateid').where({
       stateid: req.params.id
@@ -53,10 +49,10 @@ router.get('/advisors/:id', function(req, res, next) {
 });
 
 
-=======
+
 // Map page
 router.get('/map', function(req, res, next) {
   res.render('map', { title: 'Express' });
 });
->>>>>>> 4c4612dc7e8268a8b72ec99594c794443c2940c5
+
 module.exports = router;
