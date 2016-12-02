@@ -53,17 +53,17 @@ exports.seed = function(knex, Promise) {
 
         knex('advisor_portfolios').insert({stateid: 14, planid: 8, state: 'Illinois', portfolio_name: 'Bright Start Fixed Income Portfolio', plan_name: 'Bright Start Advisor', one_year_return: -.64, three_year_return: .28, five_year_return: .44}),
 
-        knex('advisor_portfolios').insert({stateid: 15, planid: 9, state: 'Indiana', portfolio_name: 'Age-Based Option: Aggressive Growth Portfolio', plan_name: 'CollegeChoice Advisor 529 Savings Plan', one_year_return: 12.15, three_year_return:7.09, five_year_return: 12.12}),
+        knex('advisor_portfolios').insert({stateid: 15, planid: 9, state: 'Indiana', portfolio_name: '2031 Enrollment Portfolio Class', plan_name: 'CollegeChoice Advisor 529 Savings Plan', one_year_return: -.68, three_year_return:3.14}),
 
         knex('advisor_portfolios').insert({stateid: 15, planid: 9, state: 'Indiana', portfolio_name: '2025 Enrollment Portfolio', plan_name: 'CollegeChoice Advisor 529 Savings Plan', one_year_return: 5.37, three_year_return:4.61, five_year_return: 10.09}),
 
         knex('advisor_portfolios').insert({stateid: 15, planid: 9, state: 'Indiana', portfolio_name: '2019 Enrollment Portfolio', plan_name: 'CollegeChoice Advisor 529 Savings Plan', one_year_return: 3.38, three_year_return:3.77, five_year_return: 7.95}),
 
-        knex('advisor_portfolios').insert({stateid: 16, planid: 10, state: 'Iowa', portfolio_name: 'Aggressive Growth Portfolio', plan_name: 'IAdvisor 529 Plan', one_year_return: 13.03, three_year_return: 7.26, five_year_return: 13.37}),
+        knex('advisor_portfolios').insert({stateid: 16, planid: 10, state: 'Iowa', portfolio_name: 'IAdvisor 529 Aggressive', plan_name: 'IAdvisor 529 Plan', one_year_return: 5.44, three_year_return: 4}),
 
-        knex('advisor_portfolios').insert({stateid: 16, planid: 10, state: 'Iowa', portfolio_name: 'Moderate Growth Portfolio', plan_name: 'IAdvisor 529 Plan', one_year_return: 10.35, three_year_return:6.25, five_year_return: 9.38}),
+        knex('advisor_portfolios').insert({stateid: 16, planid: 10, state: 'Iowa', portfolio_name: ' IAdvisor 529 Moderate', plan_name: 'IAdvisor 529 Plan', one_year_return: 2.8, three_year_return:2.79}),
 
-        knex('advisor_portfolios').insert({stateid: 16, planid: 10, state: 'Iowa', portfolio_name: 'Income Portfolio', plan_name: 'IAdvisor 529 Plan', one_year_return: 6.41}),
+        knex('advisor_portfolios').insert({stateid: 16, planid: 10, state: 'Iowa', portfolio_name: 'IAdvisor 529 Conservative', plan_name: 'IAdvisor 529 Plan', one_year_return: .8, three_year_return:1.96}),
 
         knex('advisor_portfolios').insert({stateid: 17, planid: 11, state: 'Kansas', portfolio_name: '100% Equity Portfolio', plan_name: 'Learning Quest Advisor', one_year_return: 5.30, three_year_return:5.56, five_year_return: 11.89}),
 

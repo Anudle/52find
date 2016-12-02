@@ -1,1 +1,9 @@
-Cool {{data.name}} has an advisors plan named {{data.plan_name}}
+
+{{#if data.hasAdvisors}}
+<h1>{{data.name}}</h1>
+Cool {{data.name}} has an advisors plan named {{data.plan_name}} </h3>
+{{/if}}
+{{#unless data.hasAdvisors}}
+<h1>{{data.name}}</h1>
+<h3>Alright we're going with an advisor sold plan, just a few more questions.<h3>
+{{/unless}}
