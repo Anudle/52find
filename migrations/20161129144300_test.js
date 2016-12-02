@@ -4,6 +4,8 @@ exports.up = function(knex, Promise) {
       table.increments().primary();
       table.string('name');
       table.string('state_tax_deduction')
+      table.string('load')
+      table.boolean('hasAdvisors')
     })
 };
 

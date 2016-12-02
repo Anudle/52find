@@ -11,11 +11,11 @@ router.get('/', function(req, res, next) {
 
 
 router.get('/state/:id', function(req, res, next) {
-    knex.from('states').innerJoin('advisors', 'states.id', 'advisors.stateid').where({
-        stateid: req.params.id
+    knex.from('states').where({
+        'states.id': req.params.id
     })
-
     .then(function(data) {
+      console.log(data)
         res.render('state', {
             data: data[0]
         });
@@ -28,7 +28,6 @@ router.get('/directs/:id', function(req, res, next) {
   knex.from('states').innerJoin('directs', 'states.id', 'directs.stateid').where({
       stateid: req.params.id
   })
-
   .then(function(data) {
       res.render('directs', {
           data: data[0]
@@ -40,7 +39,6 @@ router.get('/advisors/:id', function(req, res, next) {
   knex.from('states').innerJoin('advisors', 'states.id', 'advisors.stateid').where({
       stateid: req.params.id
   })
-
   .then(function(data) {
       res.render('advisors', {
           data: data[0]

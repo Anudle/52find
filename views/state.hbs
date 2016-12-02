@@ -1,17 +1,23 @@
 
 
-<h1>{{data.name}}</h1>
+ <h1>{{data.name}}</h1>
 
 
 
-<h3>If you live in {{data.name}}, you're family is eligble to deducted up to {{data.state_tax_deduction}} each year.
+<!-- <h3>If you live in {{data.name}}, you're family is eligble to deducted up to {{data.state_tax_deduction}} each year. -->
 
-<br>
-<br>
 
-Next questions: Would you like to have a financial advisor? Some states have advisor sold plans. In these plans the advisors are paid a certain fee to help guide you with your 529 plan. In {{data.name}} the highest sale charge for an advisor sold plan is {{data.A_share_load}}%
+{{#if data.hasAdvisors}}
+<h3>Nice, next up we will see if you will like an advisor sold plan In these plans the advisors are paid a certain fee to help guide you with your 529 plan. In {{data.name}} the highest sale charge for an advisor sold plan is {{data.load}}%  </h3>
+{{/if}}
+{{#unless data.hasAdvisors}}
+<h3>Sweet, next we will see if you would like an advisor sold plan or direct sold. {{data.name}} does not offer a advisor sold plan but if you would like one we can still look for the best one for you.</h3>
+{{/unless}}
+
+
+<!-- Next questions: Would you like to have a financial advisor? Some states have advisor sold plans. In these plans the advisors are paid a certain fee to help guide you with your 529 plan. In {{data.name}} the highest sale charge for an advisor sold plan is {{data.load}}% -->
 
  </h3>
 
-<a href="/advisors/{{data.stateid}}" class="btn btn-primary btn-lg">Yes, I would like an advisor</a>
-<a href="/directs/{{data.stateid}}" class="btn btn-primary btn-lg">No, I don't want an advisor</a>
+<a href="/advisors/{{data.id}}" class="btn btn-primary btn-lg">Yes, I would like an advisor</a>
+<a href="/directs/{{data.id}}" class="btn btn-primary btn-lg">No, I don't want an advisor</a>
