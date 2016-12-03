@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 var knex = require('../db/knex')
 var query = require('../db/query')
+var axios = require('axios')
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -45,8 +47,20 @@ router.get('/advisors/:id', function(req, res, next) {
 // Map page
 router.get('/map', function(req, res, next) {
     res.render('map', {
-        title: 'Express'
+
     });
 });
+
+// results
+router.get('/results', function(req, res, next) {
+  axios.get('https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quote%20where%20symbol%20in%20(%22YHOO%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=').then( function(data){
+    res.render('results',{price: res.json(data.data.query.results.quote.LastTradePriceOnly) }  )
+
+
+  })
+
+});
+
+
 
 module.exports = router;
