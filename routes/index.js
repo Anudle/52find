@@ -55,7 +55,7 @@ router.get('/advisorportfolio/a/:id', function(req, res, next) {
         });
 });
 router.get('/advisorportfolio/b/:id', function(req, res, next) {
-    query.getMilldeAdvisorPortfolio(req.params.id)
+    query.getMiddleAdvisorPortfolio(req.params.id)
         .then(function(data) {
           console.log(data)
             res.render('advisorsresults', {
@@ -75,6 +75,38 @@ router.get('/advisorportfolio/c/:id', function(req, res, next) {
 });
 
 
+//Direct Portfolio
+router.get('/directportfolio/a/:id', function(req, res, next) {
+    query.getAggresiveDirectPortfolio(req.params.id)
+        .then(function(data) {
+          console.log(data)
+            res.render('advisorsresults', {
+                data: data[0]
+            })
+        });
+});
+router.get('/directportfolio/b/:id', function(req, res, next) {
+    query.getMiddleDirectPortfolio(req.params.id)
+        .then(function(data) {
+          console.log(data)
+            res.render('advisorsresults', {
+                data: data[0]
+            })
+        });
+});
+
+router.get('/directportfolio/c/:id', function(req, res, next) {
+    query.getConservativeDirectPortfolio(req.params.id)
+        .then(function(data) {
+          console.log(data)
+            res.render('advisorsresults', {
+                data: data[0]
+            })
+        });
+});
+
+
+
 // Map page
 router.get('/map', function(req, res, next) {
     res.render('map', {
@@ -88,7 +120,6 @@ router.get('/results', function(req, res, next) {
         res.render('results', {
             price: res.json(data.data.query.results.quote.LastTradePriceOnly)
         })
-
 
     })
 
