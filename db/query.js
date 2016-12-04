@@ -12,6 +12,6 @@ module.exports = {
     return States().innerJoin('directs', 'states.id', 'directs.stateid').where('stateid', id)
   },
   getAdvisorsByStateId: function(id){
-    return States().innerJoin('advisors', 'states.id', 'advisors.stateid').where('stateid', id)
+    return States().leftOuterJoin('advisors', 'states.name', 'advisors.state').where('states.id', id)
   }
 }

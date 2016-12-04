@@ -35,3 +35,24 @@ width: 25%;
 .startp{
   margin-top: 5vh;
 }
+
+
+/*Advisors page*/
+.babypic{
+height: 266px;
+width: 400px;
+}
+
+.kidpic{
+  height: 266px;
+  width: 400px;
+}
+
+.teen{
+  height: 266px;
+  width: 400px;
+}
+
+/*.age-choice{
+  max-height: 80vh;
+}*/

@@ -36,6 +36,7 @@ router.get('/directs/:id', function(req, res, next) {
 router.get('/advisors/:id', function(req, res, next) {
     query.getAdvisorsByStateId(req.params.id)
         .then(function(data) {
+          console.log(data)
             res.render('advisors', {
                 data: data[0]
             });
