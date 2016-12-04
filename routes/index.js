@@ -25,7 +25,7 @@ router.get('/state/:id', function(req, res, next) {
 router.get('/directs/:id', function(req, res, next) {
     query.getDirectByStateId(req.params.id)
         .then(function(data) {
-          console.log(data)
+            console.log(data)
 
             res.render('directs', {
                 data: data[0]
@@ -36,13 +36,43 @@ router.get('/directs/:id', function(req, res, next) {
 router.get('/advisors/:id', function(req, res, next) {
     query.getAdvisorsByStateId(req.params.id)
         .then(function(data) {
-          console.log(data)
+            console.log(data)
             res.render('advisors', {
                 data: data[0]
             });
         });
 });
 
+
+//Advisors Portfolio
+router.get('/advisorportfolio/a/:id', function(req, res, next) {
+    query.getAggresiveAdvisorPortfolio(req.params.id)
+        .then(function(data) {
+          console.log(data)
+            res.render('advisorsA', {
+                data: data[0]
+            })
+        });
+});
+router.get('/advisorportfolio/b/:id', function(req, res, next) {
+    query.getMilldeAdvisorPortfolio(req.params.id)
+        .then(function(data) {
+          console.log(data)
+            res.render('advisorsA', {
+                data: data[0]
+            })
+        });
+});
+
+router.get('/advisorportfolio/c/:id', function(req, res, next) {
+    query.getConservativeAdvisorPortfolio(req.params.id)
+        .then(function(data) {
+          console.log(data)
+            res.render('advisorsA', {
+                data: data[0]
+            })
+        });
+});
 
 
 // Map page
@@ -54,11 +84,13 @@ router.get('/map', function(req, res, next) {
 
 // results
 router.get('/results', function(req, res, next) {
-  axios.get('https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quote%20where%20symbol%20in%20(%22YHOO%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=').then( function(data){
-    res.render('results',{price: res.json(data.data.query.results.quote.LastTradePriceOnly) }  )
+    axios.get('https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quote%20where%20symbol%20in%20(%22YHOO%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=').then(function(data) {
+        res.render('results', {
+            price: res.json(data.data.query.results.quote.LastTradePriceOnly)
+        })
 
 
-  })
+    })
 
 });
 

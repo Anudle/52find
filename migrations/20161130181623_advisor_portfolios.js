@@ -10,6 +10,7 @@ exports.up = function(knex, Promise) {
       table.decimal('one_year_return');
       table.decimal('three_year_return');
       table.decimal('five_year_return');
+      table.string('age');
     })
 };
 
