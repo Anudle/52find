@@ -49,7 +49,7 @@ router.get('/advisorportfolio/a/:id', function(req, res, next) {
     query.getAggresiveAdvisorPortfolio(req.params.id)
         .then(function(data) {
           console.log(data)
-            res.render('advisorsA', {
+            res.render('advisorsresults', {
                 data: data[0]
             })
         });
@@ -58,7 +58,7 @@ router.get('/advisorportfolio/b/:id', function(req, res, next) {
     query.getMilldeAdvisorPortfolio(req.params.id)
         .then(function(data) {
           console.log(data)
-            res.render('advisorsA', {
+            res.render('advisorsresults', {
                 data: data[0]
             })
         });
@@ -68,7 +68,7 @@ router.get('/advisorportfolio/c/:id', function(req, res, next) {
     query.getConservativeAdvisorPortfolio(req.params.id)
         .then(function(data) {
           console.log(data)
-            res.render('advisorsA', {
+            res.render('advisorsresults', {
                 data: data[0]
             })
         });
