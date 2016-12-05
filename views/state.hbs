@@ -1,26 +1,19 @@
 
 
- <h1>{{data.name}}</h1>
-{{#if data.shouldDoDirect}}
-<h3>In {{data.name}} they do not have an advisor sold plan and they do offer state tax deductions of {{data.state_tax_deduction}}. Since that is the case you should forgo getting an out of state advisor account since you should be bennefiting from the state tax deductions.</h3>
-
-<a href="/directs/{{data.id}}" class="btn btn-primary btn-lg">Direct Account</a>
-{{/if}}
-
-{{#unless data.shouldDoDirect}}
-
-{{#if data.hasAdvisors}}
-<h3>Nice, next up we will see if you will like an advisor sold plan In these plans the advisors are paid a certain fee to help guide you with your 529 plan. In {{data.name}} the highest sale charge for an advisor sold plan is {{data.load}}%  </h3>
-
-<a href="/advisors/{{data.id}}" class="btn btn-primary btn-lg">Advisor Account</a>
-<a href="/directs/{{data.id}}" class="btn btn-primary btn-lg">Direct Account</a>
-{{/if}}
+<h1>{{data.name}}</h1>
 
 
-{{#unless data.hasAdvisors}}
-<h3>Sweet, next we will see if you would like an advisor sold plan or direct sold. {{data.name}} does not offer an advisor sold plan but if you would like one we can still look for a top one in the country. In an advisor sold account you will see a sales charge, they vary from 3% - 6%.</h3>
+<h3>{{data.name}} allows state tax deduction into the 529 account.
 
-<a href="/advisors/{{data.id}}" class="btn btn-primary btn-lg">Advisor Account</a>
-<a href="/directs/{{data.id}}" class="btn btn-primary btn-lg">Direct Account</a>
-{{/unless}}
-{{/unless}}
+<br>
+<br>
+The total amount a family can deduct a year is
+{{data.state_tax_deduction}}.
+<br>
+<br>
+What this means:
+If a family in {{data.name}} makes $60,000 and max out their 529 contribution. They can report an income of {{data.final_tax_amount}} on their state tax.
+</h3>
+
+
+<a class="btn btn-primary btn-lg" href='/state/brokerquestion/{{data.id}}'>Next</button>

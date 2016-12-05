@@ -13,6 +13,8 @@ exports.up = function(knex, Promise) {
       table.integer('directAlink')
       table.integer('directBlink')
       table.integer('directClink')
+      table.boolean('if_deduction')
+      table.string('final_tax_amount')
     })
 };
 

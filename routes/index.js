@@ -13,6 +13,15 @@ router.get('/', function(req, res, next) {
 });
 
 
+router.get('/state/brokerquestion/:id', function(req, res, next) {
+    query.getStatesByID(req.params.id)
+        .then(function(data) {
+            res.render('brokerquestion', {
+                data: data[0]
+            });
+        });
+});
+
 router.get('/state/:id', function(req, res, next) {
     query.getStatesByID(req.params.id)
         .then(function(data) {
@@ -21,6 +30,7 @@ router.get('/state/:id', function(req, res, next) {
             });
         });
 });
+
 
 router.get('/directs/:id', function(req, res, next) {
     query.getDirectByStateId(req.params.id)
@@ -90,7 +100,7 @@ router.get('/directportfolio/b/:id', function(req, res, next) {
         .then(function(data) {
           console.log(data)
             res.render('advisorsresults', {
-              
+
                 data: data[0]
             })
         });
