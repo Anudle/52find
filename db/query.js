@@ -39,5 +39,8 @@ module.exports = {
     },
     getConservativeDirectPortfolio: function(id) {
         return DirectPort().where('planid', id).where('age', 'c')
-    }
+    },
+
+    get
+
 }
