@@ -1,16 +1,28 @@
-// var  base = 'https://query.yahooapis.com/v1/public/yql?q='
-//
-// var yql_query = 'select * from yahoo.finance.quote where symbol in ("YAHOO")';
-// var yql_query_str = (base * yql_query)
-// var query_str_final = yql_query_str + '&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback='
+// 
 //
 //
-//  $.getJSON(query_str_final, function(data){
-//    console.log(data)
-//  })
-// // https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quote%20where%20symbol%20in%20(%22YHOO%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=
+// var chrt = document.getElementById("mycanvas").getContext("2d");
+// var myarr = [4, 5, 9,];
+// var data = {
+//     labels: ["One Year", "Three Year", "Five Year"], //x-axis
+//     datasets: [
+//         {
+//             label: "My First dataset", //optional
+//             fillColor: "rgba(220,220,220,0.8)",
+//             strokeColor: "rgba(220,220,220,0.8)",
+//             highlightFill: "rgba(220,220,220,0.75)",
+//             highlightStroke: "rgba(220,220,220,1)",
+//             data: [2, 7, 6,] // y-axis
+//         },
+// 		{
+//             label: "My Second dataset", //optional
+//             fillColor: "rgba(220,120,220,0.8)",
+//             strokeColor: "rgba(220,120,220,0.8)",
+//             highlightFill: "rgba(220,220,220,0.75)",
+//             highlightStroke: "rgba(220,220,220,1)",
+//             data: myarr
+//         }
+//     ]
+// };
 //
-//
-//  // $http.getJSON(query_str_final, function(data){
-//  //   console.log(data)
-//  // })
+// var myFirstChart = new Chart(chrt).Bar(data);

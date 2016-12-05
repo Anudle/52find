@@ -10,6 +10,9 @@ exports.up = function(knex, Promise) {
       table.integer('advisorAlink')
       table.integer('advisorBlink')
       table.integer('advisorClink')
+      table.integer('directAlink')
+      table.integer('directBlink')
+      table.integer('directClink')
     })
 };
 
