@@ -1,6 +1,6 @@
 <h1>
 <br>
-You should do pick this Portfolio: {{data.portfolio_name}}
+You should pick this Portfolio: {{data.portfolio_name}}
 from: {{data.state}}
 
 ONE YEAR:  {{data.one_year_return}}%
@@ -10,5 +10,33 @@ THREE YEAR  {{data.three_year_return}}%
 FIVE YEAR  {{data.five_year_return}}%
 </h1>
 
-
 <canvas id="mycanvas" width="400" height="400"></canvas>
+
+<script>
+var chrt = document.getElementById("mycanvas").getContext("2d");
+var myarr = [{{data.one_year_return}}, {{data.three_year_return}}, {{data.five_year_return}}];
+var data = {
+    labels: ["One Year", "Three Year", "Five Year"], //x-axis
+    datasets: [
+        {
+            label: "Cost of tution (National Center for Education Stats)", //optional
+            fillColor: "rgba(220,220,220,0.8)",
+            strokeColor: "rgba(220,220,220,0.8)",
+            highlightFill: "rgba(220,220,220,0.75)",
+            highlightStroke: "rgba(220,220,220,1)",
+            data: [2.1, 4.6, 8] // y-axis
+        },
+		{
+            label: "The Portfolio reutrns", //optional
+            fillColor: "rgba(220,120,220,0.8)",
+            strokeColor: "rgba(220,120,220,0.8)",
+            highlightFill: "rgba(220,220,220,0.75)",
+            highlightStroke: "rgba(220,220,220,1)",
+            data: myarr
+        }
+    ]
+};
+
+var myFirstChart = new Chart(chrt).Bar(data);
+
+</script>

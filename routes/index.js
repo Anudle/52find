@@ -90,6 +90,7 @@ router.get('/directportfolio/b/:id', function(req, res, next) {
         .then(function(data) {
           console.log(data)
             res.render('advisorsresults', {
+              
                 data: data[0]
             })
         });

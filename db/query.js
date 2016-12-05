@@ -40,7 +40,9 @@ module.exports = {
     getConservativeDirectPortfolio: function(id) {
         return DirectPort().where('planid', id).where('age', 'c')
     },
+    getAdvisorData: function(id){
+      return DirectPort().where(planid, id).select('one_year_return')
+    }
 
-    get
 
 }
