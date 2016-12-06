@@ -32,16 +32,13 @@ module.exports = {
         return AdvisorsPort().innerJoin('advisors', 'advisor_portfolios.stateid', 'advisors.stateid').where('planid', id).where('age', 'c')
     },
     getAggresiveDirectPortfolio: function(id) {
-        return DirectPort().where('planid', id).where('age', 'a')
+        return DirectPort().innerJoin('directs', 'direct_portfolios.stateid', 'directs.stateid').where('planid', id).where('age', 'a')
     },
     getMiddleDirectPortfolio: function(id) {
-        return DirectPort().where('planid', id).where('age', 'b')
+        return DirectPort().innerJoin('directs', 'direct_portfolios.stateid', 'directs.stateid').where('planid', id).where('age', 'b')
     },
     getConservativeDirectPortfolio: function(id) {
-        return DirectPort().where('planid', id).where('age', 'c')
-    },
-    getAdvisorData: function(id){
-      return DirectPort().where(planid, id).select('one_year_return')
+        return DirectPort().innerJoin('directs', 'direct_portfolios.stateid', 'directs.stateid').where('planid', id).where('age', 'c')
     }
 
 
