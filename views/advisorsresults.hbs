@@ -10,6 +10,7 @@ THREE YEAR  {{data.three_year_return}}%
 FIVE YEAR  {{data.five_year_return}}%
 </h1>
 
+
 <canvas id="mycanvas" width="400" height="400"></canvas>
 
 <script>
@@ -20,20 +21,28 @@ var data = {
     datasets: [
         {
             label: "Cost of tution (National Center for Education Stats)", //optional
-            fillColor: "rgba(220,220,220,0.8)",
-            strokeColor: "rgba(220,220,220,0.8)",
-            highlightFill: "rgba(220,220,220,0.75)",
-            highlightStroke: "rgba(220,220,220,1)",
+            fillColor: "rgb(112,193,179)",
+            strokeColor: "rgb(112,193,179)",
+            highlightFill: "rgb(112,193,179)",
+            highlightStroke: "rgb(112,193,179)",
             data: [2.1, 4.6, 8] // y-axis
         },
 		{
             label: "The Portfolio reutrns", //optional
-            fillColor: "rgba(220,120,220,0.8)",
-            strokeColor: "rgba(220,120,220,0.8)",
-            highlightFill: "rgba(220,220,220,0.75)",
-            highlightStroke: "rgba(220,220,220,1)",
+            fillColor: "rgb(36,123,160)",
+            strokeColor: "rgb(36,123,160)",
+            highlightFill: "rgb(36,123,160)",
+            highlightStroke: "rgb(36,123,160)",
             data: myarr
-        }
+        },
+        {
+                label: "SPY return", //optional
+                fillColor: "rgb(255,22,84)",
+                strokeColor: "rgb(255,22,84)",
+                highlightFill: "rgb(255,22,84)",
+                highlightStroke: "rgb(255,22,84)",
+                data: [4.4, 8.7, 13]
+            }
     ]
 };
 

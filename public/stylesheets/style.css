@@ -1,7 +1,7 @@
 
 
 body {
-  padding: 50px;
+
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -11,10 +11,21 @@ a {
 
 
 /*Homepage*/
-
+.heading{
+  display: flex;
+  justify-content: center;
+}
+.text{
+  display: block;
+  width: 80vw;
+  margin: auto;
+}
 .title{
   display: flex;
   justify-content: center;
+}
+.cap{
+  background-image: url('../images/whitecap.png')
 }
 
 .homepage-pic{
@@ -25,6 +36,32 @@ height: 459px;
 width: 688px;
 }
 
+.homepageBottom{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vh;
+  margin-left: 5vw;
+}
+
+.pic1{
+  border: 3px solid black;
+  border-color: black;
+  border-radius: 200px;
+  height: 380px;
+  width: 380px;
+}
+.pic2{
+  border: 3px solid black;
+  border-radius: 200px;
+  height: 380px;
+  width: 380px;
+}
+.pic3{
+  border: 3px solid black;
+  border-radius: 200px;
+  height: 380px;
+  width: 380px;
+}
 .start{
 display: block;
 margin: auto;
@@ -36,7 +73,68 @@ width: 25%;
   margin-top: 5vh;
 }
 
+.map{
+  display: block;;
+  align-items: center;
+  margin: auto;
+  width: 898px;
+}
 
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  height: 90px;
+  width: 90px;
+  background-color: #217DBB;
+}
+.active{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  height: 90px;
+  width: 90px;
+  background-color: #ECF0F1;
+}
+.success{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  height: 90px;
+  width: 90px;
+  background-color: #18BC9C;
+}
+
+.warning{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  height: 90px;
+  width: 90px;
+  background-color: #E08E0B;
+}
+
+.danger{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  height: 90px;
+  width: 90px;
+  background-color: #E74C3C;
+}
+
+
+
+.key{
+  text-align: center;
+  width: 50vw;
+  margin: auto;
+}
 /*Advisors page*/
 .babypic{
 height: 266px;
@@ -53,6 +151,10 @@ width: 400px;
   width: 400px;
 }
 
-/*.age-choice{
-  max-height: 80vh;
-}*/
+/*results*/
+#mycanvas{
+display: block;
+align-items: center;
+margin: auto;
+width: 500px;
+}

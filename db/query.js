@@ -23,13 +23,13 @@ module.exports = {
         return States().leftOuterJoin('advisors', 'states.name', 'advisors.state').where('states.id', id)
     },
     getAggresiveAdvisorPortfolio: function(id) {
-        return AdvisorsPort().where('planid', id).where('age', 'a')
+        return AdvisorsPort().innerJoin('advisors', 'advisor_portfolios.stateid', 'advisors.stateid').where('planid', id).where('age', 'a')
     },
     getMiddleAdvisorPortfolio: function(id) {
-        return AdvisorsPort().where('planid', id).where('age', 'b')
+        return AdvisorsPort().innerJoin('advisors', 'advisor_portfolios.stateid', 'advisors.stateid').where('planid', id).where('age', 'b')
     },
     getConservativeAdvisorPortfolio: function(id) {
-        return AdvisorsPort().where('planid', id).where('age', 'c')
+        return AdvisorsPort().innerJoin('advisors', 'advisor_portfolios.stateid', 'advisors.stateid').where('planid', id).where('age', 'c')
     },
     getAggresiveDirectPortfolio: function(id) {
         return DirectPort().where('planid', id).where('age', 'a')
