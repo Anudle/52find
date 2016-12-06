@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
 });
 
 
-router.get('/state/brokerquestion/:id', function(req, res, next) {
+router.get('/statebrokerquestion/:id', function(req, res, next) {
     query.getStatesByID(req.params.id)
         .then(function(data) {
             res.render('brokerquestion', {
