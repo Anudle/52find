@@ -35,7 +35,7 @@ exports.seed = function(knex, Promise) {
 
         knex('states').insert({name: 'Indiana', state_tax_deduction: '$1,000 (tax credit)', load:'5.25',hasAdvisors:true, advisorAlink:9, advisorBlink: 9, advisorClink: 9, directAlink:15, directBlink: 15, directClink:15, if_deduction: true}),
 
-        knex('states').insert({name: 'Iowa', state_tax_deduction: '$6,376', load: '4.75',hasAdvisors:true, advisorAlink:10, advisorBlink: 10, advisorClink: 10, directAlink:16, directBlink: 16, directClink:16, if_deduction: true}),
+        knex('states').insert({name: 'Iowa', state_tax_deduction: '$6,376', load: '4.75',hasAdvisors:true, advisorAlink:10, advisorBlink: 10, advisorClink: 10, directAlink:16, directBlink: 16, directClink:16, if_deduction: true, final_tax_amount: '$53,624'}),
 
         knex('states').insert({name: 'Kansas', state_tax_deduction: '$6,000', load:'5.75',hasAdvisors:true, advisorAlink:11, advisorBlink: 11, advisorClink: 11, directAlink:11, directBlink: 33, directClink:2, if_deduction: true,final_tax_amount: '$54,000'}),
 
@@ -43,7 +43,7 @@ exports.seed = function(knex, Promise) {
 
         knex('states').insert({name: 'Louisiana', state_tax_deduction: '$4,800', load: 'none',hasAdvisors:false, shouldDoDirect: true, directAlink:19, directBlink: 19, directClink:19, if_deduction: true,final_tax_amount: '$55,200'}),
 
-        knex('states').insert({name: 'Maine', state_tax_deduction: '$250', load:'5.25',hasAdvisors:true, directAlink:11, directBlink: 33, directClink:2, if_deduction: true }),
+        knex('states').insert({name: 'Maine', state_tax_deduction: '$250', load:'5.25',hasAdvisors:true, directAlink:11, directBlink: 33, directClink:2, if_deduction: true, final_tax_amount: '$59,750' }),
 
         knex('states').insert({name: 'Maryland', state_tax_deduction: '$5,000', load: 'none',hasAdvisors:false, shouldDoDirect: true, directAlink:21, directBlink: 21, directClink:21 , if_deduction: true,final_tax_amount: '$55,000'}),
 
@@ -69,13 +69,13 @@ exports.seed = function(knex, Promise) {
 
         knex('states').insert({name: 'New Mexico', state_tax_deduction: 'Full state tax', load: '4.75',hasAdvisors:true, advisorAlink:18, advisorBlink: 18, advisorClink: 18, directAlink:32, directBlink: 32, directClink:32, if_deduction: true,if_deduction: true, final_tax_amount: '$0'}),
 
-        knex('states').insert({name: 'New York', state_tax_deduction: '$10,000' , load:'5.25',hasAdvisors:true, advisorAlink:19, advisorBlink: 19, advisorClink: 19 , directAlink:33, directBlink: 33, directClink:33, if_deduction: true}),
+        knex('states').insert({name: 'New York', state_tax_deduction: '$10,000' , load:'5.25',hasAdvisors:true, advisorAlink:19, advisorBlink: 19, advisorClink: 19 , directAlink:33, directBlink: 33, directClink:33, if_deduction: true, final_tax_amount: '$50,000'}),
 
         knex('states').insert({name: 'North Carolina', state_tax_deduction: 'No deductions', load: 'none',hasAdvisors:false, advisorAlink:17, advisorBlink: 22, advisorClink: 20, directAlink:11, directBlink: 33, directClink:2 }),
 
         knex('states').insert({name: 'North Dakota', state_tax_deduction: '$10,000', load: 'none',hasAdvisors:false, shouldDoDirect: true, directAlink:35, directBlink: 35, directClink:35, if_deduction: true, final_tax_amount: '$50,000'}),
 
-        knex('states').insert({name: 'Ohio', state_tax_deduction: '$2,000', load:'5.25',hasAdvisors:true, advisorAlink:20, advisorBlink: 20, advisorClink: 20 , directAlink:36, directBlink: 36, directClink:36, if_deduction: true}),
+        knex('states').insert({name: 'Ohio', state_tax_deduction: '$2,000', load:'5.25',hasAdvisors:true, advisorAlink:20, advisorBlink: 20, advisorClink: 20 , directAlink:36, directBlink: 36, directClink:36, if_deduction: true, final_tax_amount: '$58,000'}),
 
         knex('states').insert({name: 'Oklahoma', state_tax_deduction: '$20,000', load: '4.25',hasAdvisors:true, advisorAlink:21, advisorBlink: 21, advisorClink: 21, directAlink:37, directBlink: 37, directClink:37, if_deduction: true, final_tax_amount: '$40,000'}),
 
@@ -83,7 +83,7 @@ exports.seed = function(knex, Promise) {
 
         knex('states').insert({name: 'Pennsylvania', state_tax_deduction: '$28,000', load: 'none',hasAdvisors:false, advisorAlink:17, advisorBlink: 22, advisorClink: 20, directAlink:11, directBlink: 33, directClink:2, if_deduction: true, final_tax_amount: '$32,000'}),
 
-        knex('states').insert({name: 'Road Island', state_tax_deduction: '$1,000', load: '4',hasAdvisors:true, advisorAlink:23, advisorBlink: 23, advisorClink: 23 , directAlink:40, directBlink: 40, directClink:40, if_deduction: true}),
+        knex('states').insert({name: 'Road Island', state_tax_deduction: '$1,000', load: '4',hasAdvisors:true, advisorAlink:23, advisorBlink: 23, advisorClink: 23 , directAlink:40, directBlink: 40, directClink:40, if_deduction: true, final_tax_amount: '$59,000'}),
 
         knex('states').insert({name: 'South Carolina', state_tax_deduction: 'Full state tax', load: '3.75',hasAdvisors:true, advisorAlink:25, advisorBlink: 25, advisorClink: 25, directAlink:41, directBlink: 41, directClink:41, if_deduction: true,final_tax_amount: '$0'}),
 

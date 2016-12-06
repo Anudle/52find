@@ -166,10 +166,31 @@ width: 400px;
 }
 
 /*results*/
+.resulttextdiv{
+  display: flex;
+  justify-content: center;
+}
+.graphdiv{
+  margin-right: 15vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
 .graph{
+  display: block;
   margin-top: 20vh;
 }
 
+.leftaxisdiv{
+  margin-right: 2vw;
+}
+
+.visitlink{
+  display: block;
+  margin: auto;
+  margin-top: 10vh;
+  width: 20vw;
+}
 #mycanvas{
 display: block;
 align-items: center;
@@ -178,6 +199,15 @@ width: 500px;
 }
 
 .leftaxis{
-  margin-bottom: -90px;
-  margin-left: 20vw;
+  margin-top: 15vh;
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
