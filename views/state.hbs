@@ -1,7 +1,8 @@
 
 
-<h1>{{data.name}}</h1>
+<h1 class='title'>{{data.name}}</h1>
 
+{{#if data.if_deduction}}
 
 <h3>{{data.name}} allows state tax deduction into the 529 account.
 
@@ -16,4 +17,16 @@ If a family in {{data.name}} makes $60,000 and max out their 529 contribution. T
 </h3>
 
 
+{{/if}}
+
+{{#if data.no_state_tax}}
+<h3 class='text'>{{data.name}} has no state taxes. Since that is the case it does not matter if you choose an instate plan.
+{{/if}}</h3>
+
+{{#unless data.if_deduction}}
+{{#unless data.no_state_tax}}
+<h3 class='text'>Looks like the {{data.name}} 529's don't allow state tax deduction. Since that is the case it does not matter if you choose an instate plan.
+</h4>
+{{/unless}}
+{{/unless}}
 <a class="btn btn-primary btn-lg" href='/state/brokerquestion/{{data.id}}'>Next</button>

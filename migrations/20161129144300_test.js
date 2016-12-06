@@ -15,6 +15,7 @@ exports.up = function(knex, Promise) {
       table.integer('directClink')
       table.boolean('if_deduction')
       table.string('final_tax_amount')
+      table.boolean('no_state_tax')
     })
 };
 
