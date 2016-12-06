@@ -57,7 +57,7 @@ router.get('/advisors/:id', function(req, res, next) {
 
 
 //Advisors Portfolio
-router.get('/advisorportfolio/a/:id', function(req, res, next) {
+router.get('/advisorportfolioa/:id', function(req, res, next) {
     query.getAggresiveAdvisorPortfolio(req.params.id)
         .then(function(data) {
           console.log(data)
@@ -66,7 +66,7 @@ router.get('/advisorportfolio/a/:id', function(req, res, next) {
             })
         });
 });
-router.get('/advisorportfolio/b/:id', function(req, res, next) {
+router.get('/advisorportfoliob/:id', function(req, res, next) {
     query.getMiddleAdvisorPortfolio(req.params.id)
         .then(function(data) {
           console.log(data)
@@ -76,7 +76,7 @@ router.get('/advisorportfolio/b/:id', function(req, res, next) {
         });
 });
 
-router.get('/advisorportfolio/c/:id', function(req, res, next) {
+router.get('/advisorportfolioc/:id', function(req, res, next) {
     query.getConservativeAdvisorPortfolio(req.params.id)
         .then(function(data) {
           console.log(data)
@@ -88,7 +88,7 @@ router.get('/advisorportfolio/c/:id', function(req, res, next) {
 
 
 //Direct Portfolio
-router.get('/directportfolio/a/:id', function(req, res, next) {
+router.get('/directportfolioa/:id', function(req, res, next) {
     query.getAggresiveDirectPortfolio(req.params.id)
         .then(function(data) {
           console.log(data)
@@ -97,7 +97,7 @@ router.get('/directportfolio/a/:id', function(req, res, next) {
             })
         });
 });
-router.get('/directportfolio/b/:id', function(req, res, next) {
+router.get('/directportfoliob/:id', function(req, res, next) {
     query.getMiddleDirectPortfolio(req.params.id)
         .then(function(data) {
           console.log(data)
@@ -108,7 +108,7 @@ router.get('/directportfolio/b/:id', function(req, res, next) {
         });
 });
 
-router.get('/directportfolio/c/:id', function(req, res, next) {
+router.get('/directportfolioc/:id', function(req, res, next) {
     query.getConservativeDirectPortfolio(req.params.id)
         .then(function(data) {
           console.log(data)
@@ -149,8 +149,6 @@ router.get('/test', function(req, res, next) {
         res.render('results', {
             price: res.json(data)
         })
-
-
 })
 });
 
