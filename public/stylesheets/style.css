@@ -226,6 +226,17 @@ margin-top: 3vh;
 margin-bottom: 3vh;
 }
 
+.brokerpicdiv{
+  display: flex;
+  justify-content: center;
+}
+.brokerpic{
+  margin-top: 2vh;
+  border: 3px solid black;
+  width: 559px;
+  height: 373px;
+}
+
 .kidpic{
   height: 266px;
   width: 400px;
