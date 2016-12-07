@@ -13,8 +13,10 @@
   <h3>In {{data.name}} they do not have an advisor sold plan and they do offer state tax deductions of {{data.state_tax_deduction}}. Since that is the case you should forgo getting an out of state advisor account since you should be bennefiting from the state tax deductions.</h3>
 </div>
 
+<div class="brokerbuttons">
+  <a  href="/directs/{{data.id}}" class="btn btn-primary btn-lg">Direct Account</a>
+</div>
 
-<a href="/directs/{{data.id}}" class="btn btn-primary btn-lg">Direct Account</a>
 {{/if}}
 
 {{#unless data.shouldDoDirect}}
@@ -22,7 +24,7 @@
 {{#if data.hasAdvisors}}
 
 <div class="brokertext">
-  <h3>Nice, next up we will see if you will like an advisor sold plan In these plans the advisors are paid a certain fee to help guide you with your 529 plan. In {{data.name}} the highest sale charge for an advisor sold plan is {{data.load}}%  </h3>
+  <h3>Great, next up we will see if you will like an advisor sold plan In these plans the advisors are paid a certain fee to help guide you with your 529 plan. In {{data.name}} the highest sale charge for an advisor sold plan is {{data.load}}%  </h3>
 </div>
 
 <div class="brokerbuttons">
@@ -35,9 +37,16 @@
 
 {{#unless data.hasAdvisors}}
 
-<h3>Sweet, next we will see if you would like an advisor sold plan or direct sold. {{data.name}} does not offer an advisor sold plan but if you would like one we can still look for a top one in the country. In an advisor sold account you will see a sales charge, they vary from 3% - 6%.</h3>
+<h3>Great, next we will see if you would like an advisor sold plan or direct sold. {{data.name}} does not offer an advisor sold plan but if you would like one we can still look for a top one in the country. In an advisor sold account you will see a sales charge, they vary from 3% - 6%.</h3>
+<div class="brokerbuttons">
 
-<a href="/advisors/{{data.id}}" class="btn btn-primary btn-lg">Advisor Account</a>
+
+<a href="/advisors/{{data.id}}" class="btn btn-primary btn-lg" style='margin-right: 2vw;'>Advisor Account</a>
 <a href="/directs/{{data.id}}" class="btn btn-primary btn-lg">Direct Account</a>
+</div>
 {{/unless}}
 {{/unless}}
+
+<div class="brokerpicdiv">
+  <img class='brokerpic' src="https://static.pexels.com/photos/33972/pexels-photo.jpg" alt="">
+</div>
