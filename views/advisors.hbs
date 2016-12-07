@@ -1,23 +1,23 @@
 
 {{#if data.hasAdvisors}}
 <h1 class='title'>{{data.name}}</h1>
-<h4 class='statetext'>Great {{data.name}} has an advisors plan named {{data.plan_name}}</h4>
+<h4 class='statetext'> {{data.name}} has an advisors plan named {{data.plan_name}}</h4>
 <div class="container-fluid age-choice">
   <div class="babybox col-md-4">
     <img class='babypic'src="https://static.pexels.com/photos/172256/pexels-photo-172256.jpeg" alt="baby photo"></img>
-    <div class="baby-text">
+    <div class="age-text">
         <a href="/advisorportfolioa/{{data.advisorAlink}}" class="btn btn-primary agebutton">Babies/ Toddlers</a>
     </div>
   </div>
   <div class="kidbox col-md-4">
     <img class='kidpic'src="https://www.cdc.gov/features/preteenvaccines/preteenvaccines_456px.jpg" alt="kids"></img>
-    <div class="kid-text">
+    <div class="age-text">
       <a href="/advisorportfoliob/{{data.advisorBlink}}" class="btn btn-primary agebutton">Kids</a>
     </div>
   </div>
   <div class="teenbox col-md-4">
   <img class='kidpic'src="https://static.pexels.com/photos/89873/pexels-photo-89873.jpeg" alt="kids"></img>
-    <div class="teen-text">
+    <div class="age-text">
       <a href="/advisorportfolioc/{{data.advisorClink}}" class="btn btn-primary agebutton">Teens</a>
     </div>
   </div>
@@ -25,23 +25,23 @@
 {{/if}}
 {{#unless data.hasAdvisors}}
 <h1 class='title'>{{data.name}}</h1>
-<h4 class='statetext'> Cool {{data.name}} does not have an advisors plan but we can still find the best one {{data.plan_name}} </h4>
+<h4 class='statetext'> {{data.name}} does not have an advisors plan but we can still find the best one. Next pick the students age, the younger the child the longer the time horizon and more aggressive it will be. </h4>
 <div class="container-fluid age-choice">
   <div class="babybox col-md-4">
     <img class='babypic'src="https://static.pexels.com/photos/172256/pexels-photo-172256.jpeg" alt="baby photo"></img>
-    <div class="baby-text">
+    <div class="age-text">
         <a href="/advisorportfolioa/{{data.advisorAlink}}" class="btn btn-primary agebutton">Babies/ Toddlers</a>
     </div>
   </div>
   <div class="kidbox col-md-4">
     <img class='kidpic'src="https://www.cdc.gov/features/preteenvaccines/preteenvaccines_456px.jpg" alt="kids"></img>
-    <div class="kid-text">
+    <div class="age-text">
       <a href="/advisorportfoliob/{{data.advisorBlink}}" class="btn btn-primary agebutton">Kids</a>
     </div>
   </div>
   <div class="teenbox col-md-4">
   <img class='kidpic'src="https://static.pexels.com/photos/89873/pexels-photo-89873.jpeg" alt="kids"></img>
-    <div class="teen-text">
+    <div class="age-text">
       <a href="/advisorportfolioc/{{data.advisorClink}}" class="btn btn-primary agebutton">Teens</a>
     </div>
   </div>

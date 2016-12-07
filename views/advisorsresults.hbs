@@ -1,13 +1,22 @@
 <div class="resulttextdiv">
 <h1>
 <br>
-You should pick: {{data.portfolio_name}}. From: {{data.state}}
-<br>
-  ONE YEAR:  {{data.one_year_return}}% |
-  THREE YEAR  {{data.three_year_return}}% | FIVE YEAR  {{data.five_year_return}}%
-  </h1>
-
+You should pick: {{data.portfolio_name}} From: {{data.state}}
+</h1>
 </div>
+
+<br>
+<div class="returnresults">
+  <h1>ONE YEAR:
+  <span class='returnnumber'>{{data.one_year_return}}%</span> |
+  THREE YEAR:
+  <span class="returnnumber">{{data.three_year_return}}%</span> |
+  FIVE YEAR:
+  <span class='returnnumber'>{{data.five_year_return}}%</span></h1>
+</div>
+
+
+
 
 
 <div class="graphdiv">
