@@ -11,6 +11,22 @@ a {
 
 
 /*Homepage*/
+.parallax {
+    /* The image used */
+    background-image: url("https://static.pexels.com/photos/159782/girl-kids-training-school-159782.jpeg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.welcomebody{
+height: 900px;
+}
 .heading{
   display: flex;
   justify-content: center;
@@ -44,31 +60,40 @@ height: 826.2px;
 width: 1238.4px;
 }
 
+.img-center {
+    margin: 0 auto;
+}
+
 .homepageBottom{
   display: flex;
   justify-content: space-between;
+
   margin-top: 25vh;
-  margin-left: 5vw;
+  margin-left: 9vw;
+}
+
+.bottompic{
+  text-align: center;
 }
 
 .pic1{
   border: 3px solid black;
   border-color: black;
   border-radius: 200px;
-  height: 380px;
-  width: 380px;
+  height: 270px;
+  width: 270px;
 }
 .pic2{
   border: 3px solid black;
   border-radius: 200px;
-  height: 380px;
-  width: 380px;
+  height: 270px;
+  width: 270px;
 }
-.pic3{
+.img-circle{
   border: 3px solid black;
   border-radius: 200px;
-  height: 380px;
-  width: 380px;
+  height: 330px;
+  width: 330px;
 }
 .start{
 display: block;
