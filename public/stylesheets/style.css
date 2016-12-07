@@ -40,7 +40,7 @@ width: 688px;
 .homepageBottom{
   display: flex;
   justify-content: space-between;
-  margin-top: 5vh;
+  margin-top: 25vh;
   margin-left: 5vw;
 }
 
@@ -68,6 +68,12 @@ display: block;
 margin: auto;
 margin-top: 10vh;
 width: 25%;
+}
+.welcome{
+  text-align: center;
+}
+p.startp{
+  font-size: 25px;
 }
 
 .startp{
@@ -165,6 +171,7 @@ width: 25%;
 }
 
 .statetext{
+  text-align: center;
   display: block;
   margin: auto;
   width: 90vw;
@@ -193,11 +200,24 @@ margin-bottom: 3vh;
 }
 
 .agebutton{
+  margin-top: 3vh;
   width: 15vw;
 }
-
+.age-text{
+  display: flex;
+  justify-content: center;
+}
 /*results*/
 .resulttextdiv{
+  display: flex;
+  justify-content: center;
+}
+
+.returnnumber{
+  font-weight: bold;
+}
+
+.returnresults{
   display: flex;
   justify-content: center;
 }
@@ -214,7 +234,7 @@ margin-bottom: 3vh;
 
 .leftaxisdiv{
   margin-right: 2vw;
-  margin-top: 5vh;
+  margin-top: 7vh;
 }
 
 .visitlink{
@@ -234,7 +254,8 @@ width: 500px;
 }
 
 .leftaxis{
-  margin-top: 15vh;
+  margin-right: -5vh;
+  margin-top: 25vh;
   /* Safari */
   -webkit-transform: rotate(-90deg);
   /* Firefox */
@@ -245,4 +266,8 @@ width: 500px;
   -o-transform: rotate(-90deg);
   /* Internet Explorer */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.footer{
+  text-align: center;
 }
