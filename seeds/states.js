@@ -102,6 +102,12 @@ exports.seed = function(knex, Promise) {
         knex('states').insert({name: 'West Virgina', state_tax_deduction: 'Full state tax', load: '5.5',hasAdvisors:true , advisorAlink:28, advisorBlink: 28, advisorClink: 28, directAlink:49, directBlink: 49, directClink:49, if_deduction: true, final_tax_amount: '$0'}),
 
         knex('states').insert({name: 'Wisconsion', state_tax_deduction: '$3,100', load: '4.75',hasAdvisors:true , advisorAlink:29, advisorBlink: 29, advisorClink: 29, directAlink:48, directBlink: 48, directClink:48, if_deduction: true,final_tax_amount: '$56,900'}),
+
+        knex('states').insert({name: 'Washington', state_tax_deduction: 'none',hasAdvisors: false , advisorAlink:17, advisorBlink: 22, advisorClink: 20, directAlink:11, directBlink: 33, directClink:2 }),
+
+        knex('states').insert({name: 'Wyoming', state_tax_deduction: 'none', hasAdvisors: false , advisorAlink:17, advisorBlink: 22, advisorClink: 20, directAlink:11, directBlink: 33, directClink:2 }),
+
+
       ]);
     });
 };

@@ -128,8 +128,17 @@ router.get('/map', function(req, res, next) {
 
     });
 });
+router.get('/noplan/:id', function(req, res, next) {
+    query.getStatesByID(req.params.id)
+    .then(function(data){
+      console.log(data);
+      res.render('noplan', {
+        data: data[0]
+    });
+  });
+})
 
-//results
+
 
 router.get('/results', function(req, res, next) {
     axios.get('https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quote%20where%20symbol%20in%20(%22YHOO%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=').then(function(data) {
@@ -149,7 +158,7 @@ router.get('/test', function(req, res, next) {
         res.render('results', {
             price: res.json(data)
         })
-})
+      })
 });
 
 

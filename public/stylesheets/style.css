@@ -28,6 +28,7 @@ a {
   background-image: url('../images/whitecap.png')
 }
 
+
 .homepage-pic{
 display: block;
 margin-left: auto;
@@ -128,8 +129,27 @@ width: 25%;
   background-color: #E74C3C;
 }
 
-
-
+.brokerquestiondiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advisorbutton{
+  margin-right: 2vw;
+}
+.brokerbuttons{
+  display: flex;
+  justify-content: center;
+}
+.brokertext{
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 5vh;
+}
+.brokertitle{
+  display: flex;
+  justify-content: center;
+}
 .key{
   text-align: center;
   width: 50vw;
@@ -155,6 +175,13 @@ height: 266px;
 width: 400px;
 }
 
+.statetext{
+display: flex;
+justify-content: center;
+margin-top: 3vh;
+margin-bottom: 3vh;
+}
+
 .kidpic{
   height: 266px;
   width: 400px;
@@ -163,6 +190,10 @@ width: 400px;
 .teen{
   height: 266px;
   width: 400px;
+}
+
+.agebutton{
+  width: 15vw;
 }
 
 /*results*/
@@ -183,6 +214,7 @@ width: 400px;
 
 .leftaxisdiv{
   margin-right: 2vw;
+  margin-top: 5vh;
 }
 
 .visitlink{
@@ -196,6 +228,9 @@ display: block;
 align-items: center;
 margin: auto;
 width: 500px;
+}
+.graphkey{
+  color: white;
 }
 
 .leftaxis{
