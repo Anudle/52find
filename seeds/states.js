@@ -5,7 +5,7 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       return Promise.all([
         // Inserts seed entries
-        knex('states').insert({name: 'Alabama', state_tax_deduction: '$10,000', load:'3.5', hasAdvisors:true, advisorAlink:1, advisorBlink: 1, advisorClink: 1, directAlink:1, directBlink: 1, directClink:1, if_deduction: true, final_tax_amount: '$50,000'}),
+        knex('states').insert({name: 'Alabama', state_tax_deduction: '$10,000', load:'3.5', hasAdvisors:true, advisorAlink:1, advisorBlink: 1, advisorClink: 1, directAlink:1, directBlink: 1, directClink:1, if_deduction: true, final_tax_amount: '$50,000', flag:'https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Alabama.svg'}),
 
         knex('states').insert({name: 'Alaska', state_tax_deduction: 'No state tax', load:'5', hasAdvisors:true,  advisorAlink:2, advisorBlink: 2, advisorClink:2, directAlink:11, directBlink: 33, directClink:2, no_state_tax:true }),
 

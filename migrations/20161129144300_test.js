@@ -16,6 +16,7 @@ exports.up = function(knex, Promise) {
       table.boolean('if_deduction')
       table.string('final_tax_amount')
       table.boolean('no_state_tax')
+      table.string('flag')
     })
 };
 

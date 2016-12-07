@@ -18,7 +18,7 @@ exports.seed = function(knex, Promise) {
         knex('directs').insert({stateid: 11, plan_name: 'Path2College 529 Plan', state: 'Georgia', link:'https://www.path2college529.com/'}),
         knex('directs').insert({stateid: 12, plan_name: "Hawaii's College Savings Program", state: 'Hawaii', link:'https://www.hi529.com/'}),
         knex('directs').insert({stateid: 13, plan_name: 'Idaho College Savings Program (IDeal)', state: 'Idaho', link:'https://www.idsaves.org/'}),
-        knex('directs').insert({stateid: 14, plan_name: 'Bright Start College Savings Program', state: 'Illinois', link:'https://wwww.Brightstartcollegesavingsplan.com'}),
+        knex('directs').insert({stateid: 14, plan_name: 'Bright Start College Savings Program', state: 'Illinois', link:'https://www.Brightstartsavings.com'}),
         knex('directs').insert({stateid: 15, plan_name: 'CollegeChoice 529 Direct Savings Plan', state: 'Indiana', link:'https://www.collegechoicedirect.com/'}),
         knex('directs').insert({stateid: 16, plan_name: 'College Savings Iowa', state: 'Iowa', link:'https://www.collegesavingsiowa.com/'}),
         knex('directs').insert({stateid: 17, plan_name: 'Learning Quest 529 Education Savings Program', state: 'Kansas', link:'https://www.learningquest.com/'}),
